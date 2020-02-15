@@ -1,0 +1,61 @@
+$font-sixe1: 3.8em;
+$font-sixe2: 2em;
+$font-sixe3: 16px;
+
+$primarycolor: #4b4b4b;
+$secondarycolor: #b7b7b7;
+.hero_section {
+  .row {
+    margin: 0;
+  }
+  height: 100vh;
+  .about_my_self {
+    font-weight: bold;
+    color: $primarycolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+    .container {
+      padding-left: 16%;
+      h1 {
+        font-size: $font-sixe1;
+      }
+      h2 {
+        font-size: $font-sixe2;
+      }
+      h5 {
+        font-variant: all-small-caps;
+        letter-spacing: 2px;
+        color: $secondarycolor;
+      }
+      button {
+        color: $primarycolor;
+        font-variant: all-small-caps;
+        padding: 8px 35px;
+        letter-spacing: 1.2px;
+        font-size: $font-sixe3;
+        font-weight: 600;
+        background-color: white;
+        border: 1.6px solid $secondarycolor;
+        border-radius: 4px;
+      }
+    }
+  }
+  .photo_section {
+    height: 100vh;
+    background-color: #007bff;
+  }
+}
+.icons_section {
+  .container {
+    .icons_div {
+      height: 140px;
+      border-radius: 12px;
+      background-color: #6610f2;
+      position: relative;
+      bottom: 55px;
+    }
+  }
+}
