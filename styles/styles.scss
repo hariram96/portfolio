@@ -1,39 +1,88 @@
 $font-sixe1: 3.8em;
-$font-sixe2: 2em;
-$font-sixe3: 16px;
+$font-sixe2: 1.6em;
+$font-sixe3: 18px;
+$font-sixe4: 2.6em;
 
 $primarycolor: #4b4b4b;
-$secondarycolor: #b7b7b7;
+$secondarycolor: #888484;
+@font-face {
+  font-family: "fontGraphikBold";
+  src: url("../plugin/fonts/GraphikBold.otf");
+}
+
+@font-face {
+  font-family: "fontGraphikMedium";
+  src: url("../plugin/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "fontGraphikLight";
+  src: url("../plugin/fonts/GraphikLight.otf");
+}
+.fontGraphikMedium {
+  font-family: "fontGraphikMedium";
+}
+
+.fontGraphikBold {
+  font-family: "fontGraphikBold";
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.fontGraphikLight {
+  font-family: "fontGraphikLight";
+}
+body {
+  h1 {
+    margin: 0px;
+    font-family: "fontGraphikBold";
+    font-size: $font-sixe1;
+    font-weight: bold;
+  }
+  h2 {
+    margin: 0px;
+    font-family: "fontGraphikMedium";
+    font-size: $font-sixe2;
+  }
+  h5 {
+    margin: 0px;
+    font-family: "fontGraphikBold";
+    font-variant: all-small-caps;
+    letter-spacing: 2px;
+    color: $secondarycolor;
+  }
+}
 .hero_section {
   .row {
     margin: 0;
   }
   height: 100vh;
-  .about_my_self {
-    font-weight: bold;
-    color: $primarycolor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: white;
-    .container {
-      padding-left: 16%;
-      h1 {
-        font-size: $font-sixe1;
-      }
-      h2 {
-        font-size: $font-sixe2;
-      }
-      h5 {
-        font-variant: all-small-caps;
-        letter-spacing: 2px;
-        color: $secondarycolor;
+  .container {
+    .about_my_self {
+      line-height: 2.7;
+      flex-direction: column;
+      padding: 0;
+      text-align: left;
+      float: left;
+      font-weight: bold;
+      color: $primarycolor;
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
+      margin: auto;
+      background-color: white;
+      // padding-left: 16%;
+      span {
+        margin-top: 2%;
       }
       button {
+        font-family: "fontGraphikBold";
+        margin-top: 26px;
+        width: max-content;
         color: $primarycolor;
         font-variant: all-small-caps;
-        padding: 8px 35px;
+        padding: 3px 35px;
         letter-spacing: 1.2px;
         font-size: $font-sixe3;
         font-weight: 600;
@@ -45,7 +94,10 @@ $secondarycolor: #b7b7b7;
   }
   .photo_section {
     height: 100vh;
-    background-color: #007bff;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 .icons_section {
@@ -53,9 +105,110 @@ $secondarycolor: #b7b7b7;
     .icons_div {
       height: 140px;
       border-radius: 12px;
-      background-color: #6610f2;
       position: relative;
       bottom: 55px;
+      box-shadow: 0 40px 30px 0 rgba(34, 89, 185, 0.08);
     }
   }
+}
+.specilizing {
+  h2 {
+    font-family: "fontGraphikBold";
+    line-height: 2;
+    font-size: $font-sixe4;
+    font-weight: bold;
+    color: $primarycolor;
+  }
+  p {
+    font-family: "fontGraphikMedium";
+    line-height: 2;
+    color: $secondarycolor;
+  }
+  .card {
+    padding: 20px 30px;
+    margin-top: 6%;
+    text-align: center;
+    border: none;
+    box-shadow: 0 40px 30px 0 rgba(34, 89, 185, 0.08);
+    // box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
+    h4 {
+      font-family: "fontGraphikBold";
+      line-height: 1.8;
+      font-size: $font-sixe2;
+      font-weight: bold;
+      color: $primarycolor;
+    }
+  }
+}
+.about_section {
+  width: 100%;
+  h2 {
+    font-family: "fontGraphikBold";
+    line-height: 2;
+    font-size: $font-sixe4;
+    font-weight: bold;
+    color: $primarycolor;
+  }
+  .card_div {
+    min-height: 298px;
+    max-height: 696px;
+    margin-top: 6%;
+    .About_title {
+      margin-top: 9%;
+      font-size: $font-sixe2;
+      font-family: "fontGraphikBold";
+      color: $primarycolor;
+    }
+    // height: 140px;
+    padding: 16px;
+    text-align: center;
+    .image_width {
+      height: 140px;
+    }
+    p {
+      font-family: "fontGraphikMedium";
+      color: $secondarycolor;
+    }
+  }
+}
+.why_me {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  h2 {
+    font-family: "fontGraphikBold";
+    line-height: 2;
+    font-size: $font-sixe4;
+    font-weight: bold;
+    color: $primarycolor;
+  }
+  p {
+    font-family: "fontGraphikMedium";
+    color: $secondarycolor;
+  }
+}
+.clients_section {
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    div {
+      padding: 0px;
+    }
+    img {
+      padding: 0px;
+      width: 90px;
+      max-width: 100%;
+      height: 90px;
+    }
+    .card {
+      margin-right: 30px;
+      padding: 20px 10px;
+      width: 480px;
+    }
+  }
+  margin-bottom: 30%;
 }
