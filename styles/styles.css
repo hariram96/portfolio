@@ -318,6 +318,12 @@ img {
 }
 
 @media only screen and (max-width: 1200px) {
+  .about_my_self h1 {
+    font-size: 3em;
+  }
+  .about_my_self h2 {
+    font-size: 1.8em !important;
+  }
   h2 {
     font-size: 2em !important;
   }
