@@ -253,12 +253,22 @@ img {
   font-size: 2.6em;
   font-weight: bold;
   color: #4b4b4b;
+  margin-bottom: 3%;
 }
 
 .other_skills_section .container .card {
   -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
           box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
   min-height: 138px;
+}
+
+.other_skills_section .container .card .card-title {
+  font-family: "fontGraphikBold";
+  font-size: 1.3em;
+}
+
+.other_skills_section .container .card .card-text {
+  font-family: "fontGraphikMedium";
 }
 
 .other_skills_section .container .skill_card_parent {

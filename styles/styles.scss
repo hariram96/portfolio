@@ -233,9 +233,17 @@ img {
       font-size: $font-sixe4;
       font-weight: bold;
       color: $primarycolor;
+      margin-bottom: 3%;
     }
     .card {
       // padding: 8px 8px;
+      .card-title {
+        font-family: "fontGraphikBold";
+        font-size: 1.3em;
+      }
+      .card-text {
+        font-family: "fontGraphikMedium";
+      }
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
       min-height: 138px;
     }
