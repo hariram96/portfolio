@@ -215,6 +215,30 @@ img {
     color: $secondarycolor;
   }
 }
+.skills {
+  .progress {
+    margin-bottom: 20px;
+  }
+}
+.other_skills_section {
+  .container {
+    h2 {
+      font-family: "fontGraphikBold";
+      line-height: 2;
+      font-size: $font-sixe4;
+      font-weight: bold;
+      color: $primarycolor;
+    }
+    .card {
+      // padding: 8px 8px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.18);
+      min-height: 138px;
+    }
+    .skill_card_parent {
+      margin-bottom: 4%;
+    }
+  }
+}
 .contact_section {
   text-align: center;
   h2 {
@@ -312,12 +336,12 @@ img {
 
 @media only screen and (max-width: 1440px) {
   body {
-    background-color: lawngreen;
+    // background-color: lawngreen;
   }
 }
 @media only screen and (max-width: 1200px) {
   body {
-    background-color: pink;
+    // background-color: pink;
   }
   .icons_section {
     .container {
@@ -337,7 +361,7 @@ img {
 }
 @media only screen and (max-width: 992px) {
   body {
-    background-color: green;
+    // background-color: green;
   }
   .icons_section {
     .container {
@@ -357,7 +381,7 @@ img {
 }
 @media only screen and (max-width: 768px) {
   body {
-    background-color: red;
+    // background-color: red;
   }
   .icons_section {
     .container {
@@ -380,7 +404,7 @@ img {
 }
 @media only screen and (max-width: 600px) {
   body {
-    background-color: purple;
+    // background-color: purple;
   }
   .icons_section {
     .container {
@@ -403,7 +427,7 @@ img {
 }
 @media only screen and (max-width: 425px) {
   body {
-    background-color: violet;
+    // background-color: violet;
   }
   .skills {
   }
