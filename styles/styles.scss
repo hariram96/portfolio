@@ -3,6 +3,11 @@ $font-sixe2: 1.8em;
 $font-sixe3: 18px;
 $font-sixe4: 2.6em;
 
+$font-sixe1_res: 3.4em;
+$font-sixe2_res: 1.8em;
+$font-sixe3_res: 18px;
+$font-sixe4_res: 2em;
+
 $primarycolor: #4b4b4b;
 $secondarycolor: #888484;
 @font-face {
@@ -342,6 +347,9 @@ img {
 @media only screen and (max-width: 1200px) {
   body {
     // background-color: pink;
+  }
+  h2 {
+    font-size: $font-sixe4_res !important;
   }
   .icons_section {
     .container {

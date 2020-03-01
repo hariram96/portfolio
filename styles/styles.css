@@ -308,6 +308,9 @@ img {
 }
 
 @media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 2em !important;
+  }
   .icons_section .container .icons_div {
     height: 20vh;
   }
