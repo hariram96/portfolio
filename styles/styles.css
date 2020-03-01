@@ -386,7 +386,7 @@ img {
     display: inline-block;
   }
   .contact_section h2 {
-    font-size: 1.4em;
+    font-size: 1.4em !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
